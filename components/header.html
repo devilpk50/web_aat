@@ -1,31 +1,79 @@
-<!-- Navigation Header -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container px-4 px-lg-5">
-        
-        <a class="navbar-brand" href="#!"><img src="/assests/logo.png" alt="Logo" height="150" width="150"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">All Products</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Popular Items</a></li>
-                        <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
-                    </ul>
-                </li>
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container px-4 px-lg-5">
+
+    <!-- Logo (LEFT) -->
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="/assests/logo.png" alt="Vastra Revival" style="height:60px;">
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <!-- CENTER: Menu + Search -->
+      <div class="mx-auto d-flex align-items-center gap-4">
+
+        <!-- Menu -->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+           <li class="nav-item">
+  <a class="nav-link fw-semibold px-3 py-2 rounded-pill nav-pill" href="#">About</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link fw-semibold px-3 py-2 rounded-pill nav-pill" href="#">Sell</a>
+</li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle fw-semibold" href="#"
+               data-bs-toggle="dropdown">
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">All Products</a></li>
+              <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+              <li><a class="dropdown-item" href="#">Popular</a></li>
             </ul>
-            <form class="d-flex">
-                <button class="btn btn-outline-dark" type="submit">
-                    <i class="bi-cart-fill me-1"></i>
-                    Cart
-                    <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                </button>
-            </form>
-        </div>
+          </li>
+        </ul>
+
+        <!-- Search -->
+        <form class="d-flex">
+          <input class="form-control form-control-sm me-2"
+                 type="search"
+                 placeholder="Search products"
+                 aria-label="Search">
+        </form>
+
+      </div>
+
+      <!-- RIGHT: Sign In + Cart -->
+      <div class="d-flex gap-2 ms-lg-auto">
+
+        <a href="login.html" class="btn btn-outline-dark btn-sm">
+          <i class="bi bi-person-circle me-1"></i> Sign In
+        </a>
+
+        <a href="cart.html" class="btn btn-outline-dark btn-sm">
+          <i class="bi bi-cart-fill me-1"></i> Cart
+          <span id="cartCount"
+            class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+        </a>
+
+        <!-- Country: Nepal -->
+        <div class="country-badge d-flex align-items-center ms-2">
+  <i class="bi bi-geo-alt-fill me-1 text-danger"></i>
+  <img src="/assests/flag.png" alt="Nepal Flag" class="flag-img me-1">
+  <!-- <span class="fw-semibold">Nepal</span> -->
+</div>
+
+
+      </div>
+
     </div>
+  </div>
 </nav>
