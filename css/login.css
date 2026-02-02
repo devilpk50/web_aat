@@ -1,13 +1,14 @@
 body {
-            background-color: #898973;
+            background-color: #ffffff;
         }
         .login-box {
-            background-color: #ffffff;
+            background-color: snow;
             padding: 40px;
             border-radius: 8px;
             max-width: 400px;
             margin: 80px auto;
             text-align: center;
+            border: black 1px solid;
         }
         .login-box input {
             width: 100%;
@@ -23,12 +24,13 @@ body {
             text-decoration: none;
         }
         .signup-box {
-            background-color: #ffffff;
+            background-color: snow;
             padding: 40px;
             border-radius: 8px;
             max-width: 400px;
             margin: 80px auto;
             text-align: center;
+            border: black 1px solid;
         }
         .signup-box input {
             width: 100%;
